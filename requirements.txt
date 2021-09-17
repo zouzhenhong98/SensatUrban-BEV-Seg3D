@@ -1,0 +1,10 @@
+math
+matplotlib
+numpy
+opencv-python
+open3d == 0.10.0.1
+scikit-learn
+tensorboardX
+torch
+torchvision
+tqdm
