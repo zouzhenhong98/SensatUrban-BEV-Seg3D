@@ -8,9 +8,9 @@ Features of our framework/model:
 - fast inference process, about 1km^2 area per minute with RTX 3090.
 
 To be done:
-- add more complex/efficient fusion models
-- add more backbone like ResNeXt, HRNet, DenseNet, etc.
-- add more novel projection methods like pointpillars
+ - [ ] add more complex/efficient fusion models
+ - [ ] add more backbone like ResNeXt, HRNet, DenseNet, etc.
+ - [ ] add more novel projection methods like pointpillars
 
 For technical details, please refer to:
 
@@ -106,7 +106,7 @@ python train.py --use-balanced-weights --batch-size 8 --base-size 500 --crop-siz
 python inference.py --batch-size 8
 ```
 
-- Prediction Results Visualization
+- Prediction Results Visualization (RGB, altitude, label, prediction)
 <p align='center'> <img src='imgs/prediction_samples.png' width='80%'> </p>
 
 ### (4) Evaluation
