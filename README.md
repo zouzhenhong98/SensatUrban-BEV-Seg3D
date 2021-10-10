@@ -1,8 +1,6 @@
 # SensatUrban-BEV-Seg3D
 
-```markdown
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/efficient-urban-scale-point-clouds/3d-semantic-segmentation-on-sensaturban)](https://paperswithcode.com/sota/3d-semantic-segmentation-on-sensaturban?p=efficient-urban-scale-point-clouds)
-```
 
 This is the official implementation of our BEV-Seg3D-Net, an efficient 3D semantic segmentation framework for Urban-scale point clouds like SensatUrban, Campus3D, etc. <br />
 
