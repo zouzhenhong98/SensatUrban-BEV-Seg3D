@@ -1,5 +1,9 @@
 # SensatUrban-BEV-Seg3D
 
+```markdown
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/efficient-urban-scale-point-clouds/3d-semantic-segmentation-on-sensaturban)](https://paperswithcode.com/sota/3d-semantic-segmentation-on-sensaturban?p=efficient-urban-scale-point-clouds)
+```
+
 This is the official implementation of our BEV-Seg3D-Net, an efficient 3D semantic segmentation framework for Urban-scale point clouds like SensatUrban, Campus3D, etc. <br />
 
 Features of our framework/model:
@@ -14,8 +18,24 @@ To be done:
 
 For technical details, please refer to:
 
-**Efficient Urban-scale Point Clouds Segmentation with BEV Projection** <br />
+**[Efficient Urban-scale Point Clouds Segmentation with BEV Projection](https://arxiv.org/abs/2109.09074)** <br />
 Zhenhong Zou, Yizhe Li, Xinyu Zhang
+
+Please cite by:
+
+```
+@article{Zou2021EfficientUP,
+  title={Efficient Urban-scale Point Clouds Segmentation with BEV Projection},
+  author={Zhenhong Zou and Yizhe Li},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2109.09074}
+}
+```
+
+
+
+
 
 <p align='center'> <img src='imgs/bev_projection.png' width='80%'> </p>
 
@@ -110,12 +130,17 @@ python inference.py --batch-size 8
 <p align='center'> <img src='imgs/prediction_samples.png' width='80%'> </p>
 
 ### (4) Evaluation
-- Remap your BEV prediction to 3D and evaluate in 3D benchmark in preprocess/point_EDA_31.py (following the prvious initialization steps):
+- Remap your BEV prediction to 3D and evaluate in 3D benchmark in preprocess/point_EDA_31.py (following the previous initialization steps):
 ```
 Sensat.evaluate_batch(Sensat.evaluate_batch_nn(Sensat.eval_offline_img2pts))
 ```
 
+<p align='center'> <img src='imgs/1_compare.png' width='50%'> </p>
+
+<p align='center'> <img src='imgs/table.png' width='80%'> </p>
+
 ### (5) Citation
+
 If you find our work useful in your research, please consider citing: (Information is coming soon! We are asking the open-access term of the conference!)
 
 ### (6) Acknowledgment
@@ -133,7 +158,7 @@ To learn more about our fusion segmentation methods, please refers to our previo
         volume={118},
         pages={108020}
     }
-
+    
     @article{Zou2021ANM,
         title={A novel multimodal fusion network based on a joint coding model for lane line segmentation},
         author={Zhenhong Zou and Xinyu Zhang and Huaping Liu and Zhiwei Li and A. Hussain and Jun Li},
